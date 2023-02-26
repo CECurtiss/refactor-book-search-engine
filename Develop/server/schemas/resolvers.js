@@ -15,7 +15,7 @@ const resolvers = {
     },
   },
 
-  Mutations: {
+  Mutation: {
     saveBook: async (parent, { _id, book }, { user }) => {
       if (user) {
         const updatedBooks = await User.findOneAndUpdate(
